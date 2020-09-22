@@ -1,0 +1,77 @@
+{
+  "menu": {
+    "home": "home",
+    "human": "human",
+    "growth": "growth"
+  },
+  "subMenu": {
+    "mailbox": "mailbox",
+    "schedule": "schedule",
+    "activities": "activities",
+    "people": "people",
+    "documents": "documents",
+    "recruitment": "recruitment",
+    "reports": "reports",
+    "sales": "sales",
+    "feedback": "feedback"
+  },
+  "listOptions": {
+    "projects": {
+      "title": "Projects",
+      "desc": "Do oragnized work, and let your clients see it"
+    },
+    "goals": {
+      "title": "Goals",
+      "desc": "Track objectives and know where you're headed"
+    },
+    "assignments": {
+      "title": "Assignments",
+      "desc": "Check all your pending work in a single place"
+    },
+    "people": {
+      "title": "Colleagues",
+      "desc": "Get to know everyone within the workplace"
+    },
+    "teams": {
+      "title": "Teams",
+      "desc": "Take a look at the people you'll work with"
+    },
+    "jobOffers": {
+      "title": "Job Offers",
+      "desc": "Open job positions and track applicants"
+    },
+    "talentPools": {
+      "title": "Talent Pools",
+      "desc": "Create a database of potential candidates"
+    },
+    "careerPage": {
+      "title": "Career Page",
+      "desc": "Show all your jobs in a custom page"
+    },
+    "products": {
+      "title": "Products",
+      "desc": "Create and manage your offerings catalog"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "desc": "Easily locate your leads and prospects"
+    },
+    "funnels": {
+      "title": "Funnels",
+      "desc": "Track every stage of your sale process"
+    },
+    "checkIns": {
+      "title": "Check-ins",
+      "desc": "Make sure your team is on the right track"
+    },
+    "cultureEval": {
+      "title": "Culture Evaluation",
+      "desc": "Assess the healthiness of your team"
+    }
+  },
+  "buttonsText": {
+    "showTasks": "Tasks",
+    "showFiles": "Files",
+    "showClients": "Clients"
+  }
+}
