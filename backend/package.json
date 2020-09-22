@@ -1,0 +1,16 @@
+{
+  "name": "newtech-demo-backend",
+  "version": "1.0.0",
+  "description": "The backend side of the newtech demo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Mendez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.5",
+    "sqlite3": "^5.0.0"
+  }
+}
