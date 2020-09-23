@@ -1,0 +1,59 @@
+.employee-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+.name {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.position {
+  background: #E2E2E2;
+  color: #575757;
+  font-family: monospace;
+  width: 28px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  border-radius: 2px;
+}
+
+.email, .phone {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  line-height: 1.3rem;
+  font-family: monospace;
+}
+
+.edit-button {
+  border: 1px solid #646464;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.733);
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  width: 85px;
+  height: 38px;
+  cursor: pointer;
+}
+.edit-button:hover {
+  background: #08A650;
+  color: white;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.delete-button {
+  cursor: pointer;
+}

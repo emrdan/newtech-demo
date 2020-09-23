@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-  
+@font-face {
+  font-family: 'American-Typewriter';
+  src:  url('./assets/fonts/american-typewriter.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'American-Typewriter';
+  src:  url('./assets/fonts/american-typewriter-bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +18,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust:none;
-  font-family: 'Avenir', Helvetica, sans-serif;
+  font-family: 'American-Typewriter';
 }
 html {
   width: 100%;
@@ -18,6 +27,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  background: rgb(247, 247, 247);
 }
 
 @-moz-document url-prefix() {

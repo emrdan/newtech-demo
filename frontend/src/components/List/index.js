@@ -1,9 +1,22 @@
 import React from 'react';
+import styles from './style.module.css';
+import EmptyBox from '../EmptyBox';
 
-function List() {
+function List({ title, items, itemComponent }) {
+  const renderList = () => {
+    const Item = itemComponent;
+    if (items.length === 0) {
+      return <EmptyBox title={title}/>;
+    } else {
+      return items.map((item, index) => {
+        return <Item key={index} index={index + 1} data={item}/>
+      });
+    }
+  }
+
   return (
     <div className={styles['list']}>
-      <p className={styles['section-title']}>{props.title}</p>
+      {renderList()}
     </div>
   );
 }

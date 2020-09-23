@@ -1,0 +1,16 @@
+.empty-box {
+  border: 2px dashed rgba(0, 0, 0, 0.527);
+  width: 80%;
+  color: rgb(65, 65, 65);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: monospace;
+  line-height: 1.6rem;
+}
+.empty-box > span {
+  text-transform: lowercase;
+}

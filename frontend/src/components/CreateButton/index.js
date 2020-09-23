@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './style.module.css';
-import { Link } from "react-router-dom";
 
-function CreateButton({ to }) {
+function CreateButton() {
   return (
     <>
-      <Link to={to} className={['create-button']}>+</Link>
+      <div className={styles['create-button']}>+</div>
       <p>Create</p>
     </>
   );

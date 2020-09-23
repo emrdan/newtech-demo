@@ -1,0 +1,48 @@
+@media only screen and (min-width: 768px ) {
+  .header {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-name {
+    color: #555c64;
+    font-family: 'Avenir Next';
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .project-author {
+    color: #585e64;
+    font-weight: 300;
+    font-size: 11px;
+    font-family: 'American-Typewriter';
+  }
+  .container {
+    width: 520px;
+    height: 590px;
+    background: white;
+    border: 1px solid #687181b7;
+    border-radius: 4px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .logo {
+    height: 55px;
+  }
+  .logo > svg {
+    width: 120px;
+    height: 60px;
+  }
+  .create-button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

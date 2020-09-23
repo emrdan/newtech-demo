@@ -1,0 +1,20 @@
+.create-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px dashed black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.create-button ~ p {
+  font-size: 13px;
+  text-align: center;
+  font-family: monospace;
+}

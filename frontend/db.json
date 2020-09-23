@@ -1,0 +1,27 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "title": "Recursos Humanos"
+    },
+    {
+      "id": 2,
+      "title": "Tesorería"
+    },
+    {
+      "id": 3,
+      "title": "Tecnología"
+    }
+  ],
+  "employees": [{
+    "name": "Daniel Méndez",
+    "email": "emrdan@gmail.com",
+    "departmentId": 1,
+    "imgUrl": ""
+  }, {
+    "name": "Daniel Méndez",
+    "email": "emrdan@gmail.com",
+    "departmentId": 1,
+    "imgUrl": ""
+  }]
+}
