@@ -1,6 +1,6 @@
-const serverLoader  = require('./server');
-const dbLoader = require('./db');
-require('./events');
+const serverLoader = require("./server");
+const dbLoader = require("./db");
+require("./events");
 
 export default async ({ expressApp }) => {
   const dbConn = await mongooseLoader();
