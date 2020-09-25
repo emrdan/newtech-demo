@@ -6,6 +6,7 @@ The idea behind my decision was to prove you that I can build a React app withou
 
 Downsides
 
+  - I had to do everything from zero (with very limited time)
   - No UX
   - No Mobile Responsive
   - Backend code was put together but still have to test it
