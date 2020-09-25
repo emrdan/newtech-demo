@@ -26,6 +26,11 @@ function DeleteBox({ id, resource, changeRender }) {
   const deleteButtonClass = `${styles['button']} ${styles['delete']}`
 
   const picStyle = {
+    backgroundColor: 'var(--menu-bg-color)',
+    color: 'var(--font-color)',
+    display: (resource === 'departments' ? 'flex' : 'block'),
+    justifyContent: (resource === 'departments' ? 'center' : ''),
+    alignItems: (resource === 'departments' ? 'center' : ''),
     backgroundImage: (resource === 'employees' ? `url('${imgUrl}')` : ''),
     backgroundSize: (resource === 'employees' ? 'contain' : ''),
     backgroundRepeat: (resource === 'employees' ? 'no-repeat' : ''),

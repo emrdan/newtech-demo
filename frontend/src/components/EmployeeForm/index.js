@@ -65,7 +65,7 @@ function EmployeeForm({ id, mode, departments = [], changeRender }) {
     margin: '20px auto 10px auto'
   }
 
-  const createEmployee = async () => {
+  const createOrEdit = async () => {
     const employee = { 
       profilePic,
       firstName, 
@@ -78,8 +78,11 @@ function EmployeeForm({ id, mode, departments = [], changeRender }) {
     });
 
     if (!validation.error) {
-      const postRequest = await EmployeeService.create(employee);
-      if (postRequest.status === 200) {
+      const request = mode === 'create' 
+        ? await EmployeeService.create(employee) 
+        : await EmployeeService.update(employee);
+
+      if (request.status === 200) {
         changeRender('list');
       }
     }
@@ -139,7 +142,7 @@ function EmployeeForm({ id, mode, departments = [], changeRender }) {
         { renderSelect(departmentId, setDepartmentId) }
       </div>
       <div className={styles['buttons']}>
-        <div onClick={() => createEmployee()} className={okButtonClass}>OK</div>
+        <div onClick={() => createOrEdit()} className={okButtonClass}>OK</div>
         <div onClick={() => changeRender('list')} className={styles['button']}>Cancel</div>
       </div>
       { mode === 'create' && <p className={styles['required-note']}>All fields are required.</p>}

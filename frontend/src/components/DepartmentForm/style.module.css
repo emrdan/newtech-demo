@@ -1,0 +1,83 @@
+.department-form {
+  padding: 0 2.5rem;
+}
+
+.note {
+  color: var(--font-color);
+  font-size: 0.8125rem;
+  font-style: italic;
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.form-control-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control-container > .form-control {
+  width: 48%;
+}
+
+.form-control {
+  display: flex;
+  margin-bottom: 0.625rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.input {
+  border-radius: 0.125rem;
+  margin-bottom: 0.5rem;
+  background: var(--menu-bg-color);
+  border: 0.0625rem solid var(--border-color);
+  height: 2.5rem;
+  font-size: 0.9375rem;
+  padding: 0 0.625rem;
+  color: var(--font-color);
+  caret-color: var(--primary-color);
+}
+
+.input::placeholder {
+  color: var(--font-color);
+}
+
+select {
+  background-image: url('../../assets/icons/drop-down.svg');
+  background-size: 0.9em, 100%;
+  background-repeat: no-repeat,repeat;
+  background-position: right .5em top 50%,0 0;
+}
+
+.input:focus {
+  outline: var(--primary-color)
+}
+
+.button {
+  border: 0.0625rem solid var(--border-color);
+  border-radius: 0.125rem;
+  color: var(--font-color);
+  padding: 0.625rem;
+  font-size: 0.8125rem;
+  text-align: center;
+  width: 6.25rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.ok {
+  background: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: 0.0625rem solid transparent;
+}
+
+.required-note {
+  margin-top: 0.625rem;
+  font-size: 0.8125rem;
+  color: var(--primary-color);
+}

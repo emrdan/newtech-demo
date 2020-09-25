@@ -1,8 +1,8 @@
 .create-button-container {
   position: absolute;
-  right: 25px;
-  top: 25px;
-  width: 110px;
+  right: 1.5625rem;
+  top: 1.5625rem;
+  width: 6.875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,21 +11,22 @@
 
 .create-button {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 1px dashed black;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.0625rem dashed var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: black;
-  font-size: 28px;
-  margin-bottom: 10px;
+  color: var(--font-color);
+  font-size: 1.75rem;
+  margin-bottom: 0.625rem;
   cursor: pointer;
 }
 
 .create-button ~ p {
-  font-size: 13px;
+  font-size: 1rem;
   text-align: center;
+  color: var(--logo-font-color);
   font-family: monospace;
 }

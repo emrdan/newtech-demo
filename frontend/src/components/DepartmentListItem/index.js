@@ -11,8 +11,8 @@ function DepartmentItem({ data, changeRender }) {
         <p className={styles['name']}>{data.title}</p>
         <p className={styles['role']}>{data.membersCount} Members</p>
       </div>
-      <div onClick={() => changeRender('edit')} className={styles['edit-button']}>Edit</div>
-      <div title="Delete" className={styles['delete-button']}>
+      <div onClick={() => changeRender('edit', data.id)} className={styles['edit-button']}>Edit</div>
+      <div onClick={() => changeRender('delete', data.id)} title="Delete" className={styles['delete-button']}>
         <TrashIcon />
       </div>
     </div>

@@ -1,46 +1,70 @@
-import React, { useReducer, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './style.module.css';
-import RandomImageService from '../../services/random.service';
-import EmployeeService from '../../services/employee.service';
-import employeeReducer from '../../reducers/employee'
+import DepartmentService from '../../services/department.service';
 import Joi from 'joi';
+import EmptyBox from '../EmptyBox';
 
-const formSchema = {
-  profilePic: Joi.string().uri().required(),
-  fullName: Joi.string().required(),
-  role: Joi.string().required(),
-  departmentId: Joi.number().required()
-}
+const formSchema = Joi.object({
+  title: Joi.string().uri().required()
+})
 
-const initialState = {
-  profilePic: null,
-  fullName: null,
-  role: null,
-  departmentId: null
-}
-
-function EmployeeForm({ id = null, mode }) {
-  const [state, dispatch] = useReducer(employeeReducer, initialState);
+function DepartmentForm({ id, mode, changeRender }) {
+  const [title, setTitle] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
-      if (mode === 'create') {
-        const result = await RandomImageService.get();
-        dispatch({ type: 'ADD_RANDOM_IMG', payload: result[0] });
-      } else {
-        if (id) {
-          const result = await EmployeeService.get({ id });
-          dispatch({ type: 'SET_CURRENT_DATA', payload: result })
-        }
+      if (id && mode === 'edit') {
+        let result = await DepartmentService.get({ id });
+        result = result[0];
+        setTitle(result.title);
       }
     };
     fetchData();
   }, []);
+
+
+  const okButtonClass = `${styles['button']} ${styles['ok']}`
+
+  const createDepartment = async () => {
+    const department = { title }
+    const validation = formSchema.validate(department, {
+      abortEarly: false
+    });
+
+    if (!validation.error) {
+      const postRequest = await DepartmentService.create(department);
+      if (postRequest.status === 200) {
+        changeRender('list');
+      }
+    }
+  }
+
+  const renderInput = (placeholder, value, onChangeFn) => {
+    if (mode === 'create') {
+      return (
+        <input onChange={event => onChangeFn(event.target.value)} 
+          className={styles['input']} 
+          placeholder={placeholder} />
+      )
+    } else {
+      return (
+        <input onChange={event => onChangeFn(event.target.value)} 
+          className={styles['input']} 
+          placeholder={placeholder} value={value}/>
+      );
+    }
+  } 
   
   return (
-    <form className={styles['employee-form']}>
+    <form className={styles['department-form']}>
+      <div className={styles['buttons']}>
+        { renderInput("Deparment title", title, setTitle) }
+        <div onClick={() => createDepartment()} className={okButtonClass}>OK</div>
+        <div onClick={() => changeRender('list')} className={styles['button']}>Cancel</div>
+      </div>
+      <EmptyBox message="To create a department, you only need to provide a title." />
     </form>
   );
 }
 
-export default EmployeeForm;
+export default DepartmentForm;

@@ -1,6 +1,7 @@
 .theme-switcher {
   display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
-    margin-top: 10px;
+  justify-content: flex-end;
+  margin-right: 2.5rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
 }
