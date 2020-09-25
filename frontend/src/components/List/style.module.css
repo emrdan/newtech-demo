@@ -4,3 +4,39 @@
   font-family: 'Avenir Next';
   color: #555c64;
 }
+
+.button {
+  border: 1px solid #646464;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.733);
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  width: 100px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.active {
+  background: #08A650;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pager {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+.pager > span {
+  margin: 0 20px;
+  font-family: monospace;
+  color: #5a5a5a;
+}

@@ -1,3 +1,14 @@
+.create-button-container {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .create-button {
   border-radius: 50%;
   width: 40px;

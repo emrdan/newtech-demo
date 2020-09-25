@@ -4,11 +4,11 @@ import styles from './style.module.css'
 function Menu({ selectedMenu, onMenuSelection }) {
   const menuTitles = ['departments', 'employees'];
   const renderMenuOptions = () => {
-    return menuTitles.map(title => {
+    return menuTitles.map((title, index) => {
       const isSelected = selectedMenu === title ? styles['selected'] : '';
       return (
-        <div className={`${styles['menu-option']} ${isSelected}`}
-          onClick={() => onMenuSelection(title)}>{title}
+        <div key={index} className={`${styles['menu-option']} ${isSelected}`}
+          onClick={() => onMenuSelection(title)}>All {title}
         </div>
       );
     });

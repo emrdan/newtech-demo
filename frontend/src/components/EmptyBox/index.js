@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './style.module.css';
 
-function EmptyBox({title}) {
+function EmptyBox({ message }) {
   return (
     <div className={styles['empty-box']}>
-      You don't have any <span>{title}</span> just yet. Start by creating one.
+      {message}
     </div>
   );
 }

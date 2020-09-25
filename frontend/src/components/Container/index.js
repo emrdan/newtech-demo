@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './style.module.css';
 import { ReactComponent as LogoIcon } from "../../assets/icons/logo.svg";
-import CreateButton from '../CreateButton';
 
 function Container({ children }) {
   return (
@@ -15,9 +14,6 @@ function Container({ children }) {
             <p className={styles['project-name']}>Newtech Demo</p>
             <p className={styles['project-author']}>by Daniel Méndez @ emrdan.com</p>
           </div>
-        </div>
-        <div className={styles['create-button-container']}>
-          <CreateButton />
         </div>
       </div>
       {children}

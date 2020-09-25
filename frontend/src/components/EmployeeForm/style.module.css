@@ -1,0 +1,83 @@
+.employee-form {
+  padding: 0 40px;
+}
+
+.note {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  font-style: italic;
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-control-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control-container > .form-control {
+  width: 48%;
+}
+
+.form-control {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.input {
+  border-radius: 2px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: 8px;
+  border: 1px solid rgb(138, 138, 138);
+  height: 40px;
+  font-size: 15px;
+  width: 100%;
+  padding: 0 10px;
+  color: rgb(78, 78, 78);
+  caret-color: #08A650;
+}
+
+select {
+  background-image: url('../../assets/icons/drop-down.svg');
+  background-size: 0.9em, 100%;
+  background-repeat: no-repeat,repeat;
+  background-position: right .5em top 50%,0 0;
+}
+
+.input:focus {
+  outline: #08A650;
+}
+
+.button {
+  border: 1px solid #646464;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.733);
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  width: 100px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.ok {
+  margin-right: 20px;
+  background: #08A650;
+  color: white;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.required-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #08A650;
+}
