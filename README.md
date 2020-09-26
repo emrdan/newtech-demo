@@ -30,6 +30,6 @@ Downsides
   - No comments nor instructions
   - The React app is using a fake db with JSON SERVER.
   
-I wish I could have shown you other projects of mine or your own. I think this kind of 'homework' doesn't reflect my capabilities or domain knowledge as a software developer.
+I wish I could have shown you other projects of mine or at least discuss one of your own. I think this kind of 'homework' doesn't reflect my capabilities or domain knowledge as a software developer. In fact, I think this makes for a poor candidate experience.
 
 Anyway, feel free to explore the code and run the react app. If interested, let's analyze any other of my projects or one of yours. Contact me at emrdan@gmail.com
