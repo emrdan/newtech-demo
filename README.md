@@ -2,6 +2,7 @@ To run the React app:
 
   - change to frontend directory (cd frontend)
   - run npm install
+  - run npm install -g json-server (fake API with based on JSON files)
   - run npm start
   
 To run the express app:
