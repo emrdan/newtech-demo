@@ -1,1 +1,18 @@
-# Initial commit
+This is project is incomplete given the instructions by Newtech.
+
+The time constraint and my other responsibilities didn't allow me to invest more time into this. Additionally, I took the risky decision of not to use any abstractions like React Router, Formik (form validator) or UI frameworks like Semantic UI/Material Design.
+
+The idea behind my decision was to prove you that I can build a React app without any abstractions. As developers, we often rely too much on abstractions without understanding how things work under the hood. I wanted to reflect responsibility using plain React.
+
+Downsides
+
+  - I had to do everything from zero (with very limited time)
+  - No UX
+  - No Mobile Responsive
+  - Backend code was put together but still have to test it
+  - No comments nor instructions
+  - The React app is using a fake db with JSON SERVER.
+  
+I wish I could have shown you other projects of mine or your own. I think this kind of 'homework' doesn't reflect my capabilities or domain knowledge as a software developer.
+
+Anyway, feel free to explore the code and run the react app. If interested, let's analyze any other of my projects or one of yours. Contact me at emrdan@gmail.com
