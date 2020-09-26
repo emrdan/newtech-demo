@@ -23,6 +23,7 @@ The idea behind my decision was to prove you that I can build a React app withou
 Downsides
 
   - I had to do everything from zero (with very limited time)
+  - The CRUD is not complete as I didn't get time to write the create, edit and delete functions from the fake API.
   - No UX
   - No Mobile Responsive
   - Backend code was put together but still have to test it
