@@ -13,7 +13,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start  & json-server --watch db.json --port 5001 --host 0.0.0.0",
+    "start": "json-server --watch db.json --port 5001 --host 0.0.0.0 & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
